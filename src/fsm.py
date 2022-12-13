@@ -118,6 +118,7 @@ class TocMachine(GraphMachine):
                 if target == []:
                     send_sticker(event.reply_token, '789', '10877')
                 else:
+                    res = ""
                     for item in target:
                         res += str(item.name)+" "+"{:.2f}".format(item.score)[2:]+"%\n"
                         send_text_message(event.reply_token ,res)
