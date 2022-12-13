@@ -103,7 +103,7 @@ class TocMachine(GraphMachine):
                 image_url = response['data'][0]['url']
                 print(image_url)
                 send_image_url(event.reply_token ,image_url)
-            except:
+            except openai.error.InvalidRequestError:
                 send_sticker(event.reply_token, '789', '10860')
         elif isinstance(event, PostbackEvent):
             quick_reply(event.reply_token, "已啟動影像生成模式", "有綠色眼睛的黑貓")
