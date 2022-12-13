@@ -120,7 +120,7 @@ class TocMachine(GraphMachine):
                 else:
                     for item in target:
                         res += str(item.name)+" "+"{:.2f}".format(item.score)[2:]+"%\n"
-                    send_text_message(event.reply_token ,res)
+                        send_text_message(event.reply_token ,res)
                 os.remove("img/" + event.message.id + ".png")
         if isinstance(event, PostbackEvent):
             send_text_message(event.reply_token, "已啟動影像辨識模式\n請傳送圖片")
