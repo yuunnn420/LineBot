@@ -118,7 +118,8 @@ class TocMachine(GraphMachine):
                 if target == []:
                     send_sticker(event.reply_token, '789', '10877')
                 else:
-                    res = str(target[0].name)+" "+"{:.2f}".format(target[0].score)[2:]+"%"
+                    for item in target:
+                        res += str(item.name)+" "+"{:.2f}".format(item.score)[2:]+"%\n"
                     send_text_message(event.reply_token ,res)
                 os.remove("img/" + event.message.id + ".png")
         if isinstance(event, PostbackEvent):
