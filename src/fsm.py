@@ -103,7 +103,7 @@ class TocMachine(GraphMachine):
             print(image_url)
             send_image_url(event.reply_token ,image_url)
         elif isinstance(event, PostbackEvent):
-            quick_reply(event.reply_token, "已啟動圖片生成模式", "有綠色眼睛的黑貓")
+            quick_reply(event.reply_token, "已啟動影像生成模式", "有綠色眼睛的黑貓")
 
     def on_enter_cloud_vision(self, event):
         print("I'm entering cloud_vision")
@@ -115,8 +115,11 @@ class TocMachine(GraphMachine):
                 image = vision.Image(content=content)
                 response = client.object_localization(image=image)
                 target = response.localized_object_annotations
-                res = str(target[0].name)+" "+"{:.2f}".format(target[0].score)[2:]+"%"
-                send_text_message(event.reply_token ,res)
+                if target == []:
+                    send_sticker(event.reply_token, '789', '10877')
+                else:
+                    res = str(target[0].name)+" "+"{:.2f}".format(target[0].score)[2:]+"%"
+                    send_text_message(event.reply_token ,res)
                 os.remove("img/" + event.message.id + ".png")
         if isinstance(event, PostbackEvent):
             send_text_message(event.reply_token, "已啟動影像辨識模式\n請傳送圖片")
