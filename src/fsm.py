@@ -94,14 +94,17 @@ class TocMachine(GraphMachine):
     def on_enter_image_generation(self, event):
         print("I'm entering image_generation")
         if isinstance(event, MessageEvent):
-            response = openai.Image.create(
-            prompt=event.message.text,
-            n=1,
-            size="256x256"
-            )
-            image_url = response['data'][0]['url']
-            print(image_url)
-            send_image_url(event.reply_token ,image_url)
+            try:
+                response = openai.Image.create(
+                prompt=event.message.text,
+                n=1,
+                size="256x256"
+                )
+                image_url = response['data'][0]['url']
+                print(image_url)
+                send_image_url(event.reply_token ,image_url)
+            except:
+                send_sticker(event.reply_token, '789', '10860')
         elif isinstance(event, PostbackEvent):
             quick_reply(event.reply_token, "已啟動影像生成模式", "有綠色眼睛的黑貓")
 
