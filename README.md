@@ -70,7 +70,7 @@ python src/app.py
 ## Bonus
 * Deploy
     * GCP - Google cloud platform
-        * server: [https://lynn.cf/](https://lynn.cf/)
+        * server: [https://lynn.cf](https://lynn.cf)
 * Extra functionality or technics
     * Line API
         * Postback Event
