@@ -62,9 +62,6 @@ python src/app.py
 
 <img src="./img/error_2.png" width="500">
 
-#### cannot recognize image
-
-<img src="./img/error_3.png" width="500">
 
 ## Reference
 [Line line-bot-sdk-python](https://github.com/line/line-bot-sdk-python/tree/master/examples/flask-echo)
