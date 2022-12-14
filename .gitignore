@@ -2,7 +2,7 @@ src/ngrok.exe
 src/gen_fsm_image.py
 src/vision.py
 src/rich_menu.ipynb
-carbon-ruler-369917-a14745a2aa15.json
+key.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

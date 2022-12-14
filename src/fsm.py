@@ -13,7 +13,7 @@ from google.cloud import vision
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=r"carbon-ruler-369917-a14745a2aa15.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=r"key.json"
 client = vision.ImageAnnotatorClient()
 
 # session_token = os.getenv("SESSION_TOKEN")
