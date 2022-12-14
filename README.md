@@ -26,22 +26,22 @@ python src/app.py
 <img src="./img/rich_menu.png" width="500">
 
 ### Chat
-* by openAI GPT3 model
-* quick reply: 早安
+* By openAI GPT3 model
+* Quick Reply: 早安
 
 <img src="./img/chat_1.png" width="500"> 
 
 <img src="./img/chat_2.png" width="500">
 
 ### Image Generation
-* by openAI Image generation
-* quick reply: 有綠色眼睛的黑貓
+* By openAI Image generation
+* Quick Reply: 有綠色眼睛的黑貓
 
 <img src="./img/image_generation_1.png" width="500">
 <img src="./img/image_generation_2.png" width="500">
 
 ### Image Reconition
-* by Google Cloud Vision API
+* By Google Cloud Vision API
 
 <img src="./img/image_regconition.png" width="500">
 
