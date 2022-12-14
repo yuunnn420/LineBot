@@ -67,20 +67,21 @@ python src/app.py
 
 <img src="./img/error_3.png" width="500">
 
-## Bonus (5-10%)
-a. Deploy :
-• AWS - Amazon Web Service.
-• Heroku - PaaS (Platform as a service).
-• Microsoft Azure.
-• GCP - Google cloud platform.
-b. Extra functionality or technics :
-• Line API.
-• image/sound/video.
-• Web crawling.
-• Machine learning.
-• Blockchain.
-• Others.
-
+## Bonus
+* Deploy
+    * GCP - Google cloud platform
+        * server: [https://lynn.cf/](https://lynn.cf/)
+* Extra functionality or technics
+    * Line API
+        * Postback Event
+        * Sticker Message
+        * Image Message
+        * Rich Menu
+        * Quick Reply
+    * image
+    * Machine learning
+        * OpenAI
+        * Google Cloud Vision API
 ## Reference
 [Line line-bot-sdk-python](https://github.com/line/line-bot-sdk-python/tree/master/examples/flask-echo)
 
