@@ -116,18 +116,12 @@ class TocMachine(GraphMachine):
                 with io.open("img/" + event.message.id + ".png", 'rb') as image_file:
                     content = image_file.read()
                 image = vision.Image(content=content)
-                response = client.label_detection(image=image)
-                labels = response.label_annotations
-                if labels == []:
+                response = client.object_localization(image=image)
+                target = response.localized_object_annotations
+                if target == []:
                     send_sticker(event.reply_token, '789', '10877')
                 else:
-                    res = ''
-                    flag = 0
-                    for label in labels:
-                        if(flag):
-                            res+='\n'
-                        flag = 1
-                        res += str(label.description)+" "+"{:.2f}".format(label.score)[2:]+"%"
+                    res = str(target[0].name)+" "+"{:.2f}".format(target[0].score)[2:]+"%"
                     send_text_message(event.reply_token ,res)
                 os.remove("img/" + event.message.id + ".png")
         if isinstance(event, PostbackEvent):
