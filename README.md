@@ -8,6 +8,7 @@ You should generate a `./src/.env` file to set Environment Variables refer to `.
 
 You should generate a  `./key.json` file of Google Cloud Keys.
 
+# Rich Menu
 You should generate rich menu by [req_rich_menu.ipynb](./src/req_rich_menu.ipynb).
 
 #### Run
@@ -19,12 +20,12 @@ python src/app.py
 ![fsm](./img/fsm.png)
 
 ## Features
-### rich menu
+### Rich Menu
 * 點選 rich menu: 使用postback直接將data傳到後端
 
 <img src="./img/rich_menu.png" width="500">
 
-### chat
+### Chat
 * by openAI GPT3 model
 * quick reply: 早安
 
@@ -32,30 +33,30 @@ python src/app.py
 
 <img src="./img/chat_2.png" width="500">
 
-### image generation
+### Image Generation
 * by openAI Image generation
 * quick reply: 有綠色眼睛的黑貓
 
 <img src="./img/image_generation_1.png" width="500">
 <img src="./img/image_generation_2.png" width="500">
 
-### image reconition
+### Image Reconition
 * by Google Cloud Vision API
 
 <img src="./img/image_regconition.png" width="500">
 
-### sticker parrot
+### Sticker Parrot
 * 若user傳送[line官方sticker message](https://developers.line.biz/en/docs/messaging-api/sticker-list/) -> 回傳相同貼圖
 * 若user傳送**非**line官方sticker message -> invalid command
 
 <img src="./img/sticker_parrot.png" width="500">
 
-### error handle
-#### invalid command
+### Error Handle
+#### Invalid Command
 
 <img src="./img/error_1.png" width="500">
 
-#### reject by openAI
+#### Reject by openAI
 > openAI拒絕生成敏感圖片
 
 <img src="./img/error_2.png" width="500">
