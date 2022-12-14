@@ -4,9 +4,9 @@ A Line bot based on a finite state machine with openAI and Google Cloud Vision A
 
 ## Setup
 #### Secret Data
-You should generate `./src/.env` file to set Environment Variables refer to our `.env.sample`.
+You should add a `./src/.env` file to set Environment Variables refer to our `.env.sample`.
 
-You should generate `./key.json` file of Google Cloud Keys.
+You should add a  `./key.json` file of Google Cloud Keys.
 
 #### Run Locally
 You can either setup https server or using `ngrok` as a proxy.
