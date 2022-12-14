@@ -22,7 +22,7 @@ python src/app.py
 ## Features
 ### Rich Menu
 * 點選 rich menu: 使用postback直接將data傳到後端
-* Rich menu dose not support LINE PC version
+* Rich menu不支援電腦版
 
 <img src="./img/rich_menu.png" width="500">
 
