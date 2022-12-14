@@ -20,19 +20,28 @@ python src/app.py
 ## Features
 ### rich menu
 * 點選 rich menu: 使用postback直接將data傳到後端
-* ![rich_menu](./img/rich_menu.png)
+
+<img src="./img/rich_menu.png" width="500">
+
 ### chat
 * by openAI GPT3 model
 * quick reply: 早安
-![chat_1](./img/chat_1.png)
-![chat_2](./img/chat_2.png)
+
+<img src="./img/chat_1.png" width="500"> 
+
+<img src="./img/chat_2.png" width="500">
+
 ### image generation
 * by openAI Image generation
 * quick reply: 有綠色眼睛的黑貓
-![image_generation_1](./img/image_generation_1.png)
-![image_generation_2](./img/image_generation_2.png)
+
+<img src="./img/image_generation_1.png" width="500">
+<img src="./img/image_generation_2.png" width="500">
+
 ### image reconition
 * by Google Cloud Vision API
-![image_reconition](./img/image_reconition.png)
+
+<img src="./img/image_regconition.png" width="500">
+
 ## Reference
 [Line line-bot-sdk-python](https://github.com/line/line-bot-sdk-python/tree/master/examples/flask-echo)
