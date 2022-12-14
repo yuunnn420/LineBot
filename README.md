@@ -1,5 +1,6 @@
 # TOC Project 2022
 Develop a Line bot based on a finite state machine with OpenAI and Google Cloud Vision API
+
 Does not support LINE PC version because of rich menu
 
 ## Setup
