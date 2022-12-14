@@ -55,6 +55,7 @@ python src/app.py
 <img src="./img/error_1.png" width="500">
 
 #### reject by openAI
+> openAI拒絕生成敏感圖片
 
 <img src="./img/error_2.png" width="500">
 
@@ -64,3 +65,7 @@ python src/app.py
 
 ## Reference
 [Line line-bot-sdk-python](https://github.com/line/line-bot-sdk-python/tree/master/examples/flask-echo)
+
+[openAI](https://openai.com/)
+
+[Google Cloud Vision API](https://cloud.google.com/vision)
