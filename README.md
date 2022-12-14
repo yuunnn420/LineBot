@@ -63,7 +63,7 @@ python src/app.py
 
 <img src="./img/sticker_parrot.png" width="500">
 
-### Error Handle
+### Error Handling
 #### Invalid Command
 
 <img src="./img/error_1.png" width="500">
