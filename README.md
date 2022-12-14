@@ -62,6 +62,10 @@ python src/app.py
 
 <img src="./img/error_2.png" width="500">
 
+#### Cannot recognize image
+
+<img src="./img/error_3.png" width="500">
+
 ## Bonus (5-10%)
 a. Deploy :
 • AWS - Amazon Web Service.
