@@ -1,5 +1,5 @@
 # TOC Project 2022
-A Line bot based on a finite state machine with openAI and Google Cloud Vision API
+Develop a Line bot based on a finite state machine with OpenAI and Google Cloud Vision API
 > LINE PC version not supported because of rich menu
 
 ## Setup
@@ -9,7 +9,7 @@ You should generate a `./src/.env` file to set Environment Variables refer to `.
 You should generate a  `./key.json` file of Google Cloud Keys.
 
 #### Rich Menu
-You should generate rich menu by [req_rich_menu.ipynb](./src/req_rich_menu.ipynb).
+You should generate a rich menu by [req_rich_menu.ipynb](./src/req_rich_menu.ipynb).
 
 #### Run
 ```sh
@@ -22,11 +22,12 @@ python src/app.py
 ## Features
 ### Rich Menu
 * 點選 rich menu: 使用postback直接將data傳到後端
+* Rich menu dose not support LINE PC version
 
 <img src="./img/rich_menu.png" width="500">
 
 ### Chat
-* By openAI GPT3 model
+* By OpenAI GPT3 model
 * Quick reply: 早安
 
 <img src="./img/chat_1.png" width="500"> 
@@ -34,7 +35,7 @@ python src/app.py
 <img src="./img/chat_2.png" width="500">
 
 ### Image Generation
-* By openAI Image generation
+* By OpenAI Image generation
 * Quick reply: 有綠色眼睛的黑貓
 
 <img src="./img/image_generation_1.png" width="500">
@@ -46,8 +47,8 @@ python src/app.py
 <img src="./img/image_regconition.png" width="500">
 
 ### Sticker Parrot
-* 若user傳送[line官方sticker message](https://developers.line.biz/en/docs/messaging-api/sticker-list/) -> 回傳相同貼圖
-* 若user傳送**非**line官方sticker message -> invalid command
+* user傳送[line官方sticker message](https://developers.line.biz/en/docs/messaging-api/sticker-list/): 回傳相同貼圖
+* user傳送**非**line官方sticker message: invalid command
 
 <img src="./img/sticker_parrot.png" width="500">
 
@@ -56,15 +57,28 @@ python src/app.py
 
 <img src="./img/error_1.png" width="500">
 
-#### Reject by openAI
-> openAI拒絕生成敏感圖片
+#### Reject by OpenAI
+> OpenAI拒絕生成敏感圖片
 
 <img src="./img/error_2.png" width="500">
 
+## Bonus (5-10%)
+a. Deploy :
+• AWS - Amazon Web Service.
+• Heroku - PaaS (Platform as a service).
+• Microsoft Azure.
+• GCP - Google cloud platform.
+b. Extra functionality or technics :
+• Line API.
+• image/sound/video.
+• Web crawling.
+• Machine learning.
+• Blockchain.
+• Others.
 
 ## Reference
 [Line line-bot-sdk-python](https://github.com/line/line-bot-sdk-python/tree/master/examples/flask-echo)
 
-[openAI](https://openai.com/)
+[OpenAI](https://openai.com/)
 
 [Google Cloud Vision API](https://cloud.google.com/vision)
