@@ -4,9 +4,11 @@ A Line bot based on a finite state machine with openAI and Google Cloud Vision A
 
 ## Setup
 #### Secret Data
-You should add a `./src/.env` file to set Environment Variables refer to our `.env.sample`.
+You should generate a `./src/.env` file to set Environment Variables refer to `./src/.env.sample`.
 
-You should add a  `./key.json` file of Google Cloud Keys.
+You should generate a  `./key.json` file of Google Cloud Keys.
+
+You should generate rich menu refer to [req_rich_menu.ipynb](./src/req_rich_menu.ipynb).
 
 #### Run
 ```sh
@@ -19,7 +21,6 @@ python src/app.py
 ## Features
 ### rich menu
 * 點選 rich menu: 使用postback直接將data傳到後端
-* 使用 [req_rich_menu.ipynb](./src/req_rich_menu.ipynb) 生成
 
 <img src="./img/rich_menu.png" width="500">
 
