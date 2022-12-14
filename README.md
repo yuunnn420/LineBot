@@ -43,5 +43,24 @@ python src/app.py
 
 <img src="./img/image_regconition.png" width="500">
 
+### sticker parrot
+* 若user傳送[line官方sticker message](https://developers.line.biz/en/docs/messaging-api/sticker-list/) -> 回傳相同貼圖
+* 若user傳送**非**line官方sticker message -> invalid command
+
+<img src="./img/sticker_parrot.png" width="500">
+
+### error handle
+#### invalid command
+
+<img src="./img/error_1.png" width="500">
+
+#### reject by openAI
+
+<img src="./img/error_2.png" width="500">
+
+#### cannot recognize image
+
+<img src="./img/error_3.png" width="500">
+
 ## Reference
 [Line line-bot-sdk-python](https://github.com/line/line-bot-sdk-python/tree/master/examples/flask-echo)
