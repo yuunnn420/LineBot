@@ -2,6 +2,16 @@
 Develop a Line bot based on a finite state machine with OpenAI and Google Cloud Vision API
 
 Does not support LINE PC version because of rich menu
+## Bot information
+* Bot basic ID: @723zdtoa
+* QR code
+
+    <img src="./img/QRcode.png" width="500">
+
+* Greeting messages
+
+    <img src="./img/greeting_message.png" width="500">
+
 
 ## Setup
 #### Secret Data
