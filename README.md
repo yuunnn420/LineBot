@@ -27,7 +27,7 @@ python src/app.py
 
 ### Chat
 * By openAI GPT3 model
-* Quick Reply: 早安
+* Quick reply: 早安
 
 <img src="./img/chat_1.png" width="500"> 
 
@@ -35,7 +35,7 @@ python src/app.py
 
 ### Image Generation
 * By openAI Image generation
-* Quick Reply: 有綠色眼睛的黑貓
+* Quick reply: 有綠色眼睛的黑貓
 
 <img src="./img/image_generation_1.png" width="500">
 <img src="./img/image_generation_2.png" width="500">
