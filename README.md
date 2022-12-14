@@ -8,10 +8,7 @@ You should add a `./src/.env` file to set Environment Variables refer to our `.e
 
 You should add a  `./key.json` file of Google Cloud Keys.
 
-#### Run Locally
-You can either setup https server or using `ngrok` as a proxy.
-
-#### Run the sever
+#### Run
 ```sh
 python src/app.py
 ```
