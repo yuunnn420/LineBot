@@ -22,6 +22,7 @@ python src/app.py
 ## Features
 ### rich menu
 * 點選 rich menu: 使用postback直接將data傳到後端
+* 使用 [rich_menu_copy.ipynb](./src/rich_menu_copy.ipynb) 生成
 
 <img src="./img/rich_menu.png" width="500">
 
