@@ -8,7 +8,7 @@ You should generate a `./src/.env` file to set Environment Variables refer to `.
 
 You should generate a  `./key.json` file of Google Cloud Keys.
 
-# Rich Menu
+#### Rich Menu
 You should generate rich menu by [req_rich_menu.ipynb](./src/req_rich_menu.ipynb).
 
 #### Run
